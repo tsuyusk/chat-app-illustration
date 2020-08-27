@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container > .cellphone-section {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.container > .cellphone-section > .pink-rectangle {
+  width: 400px;
+  height: 600px;
+  border-radius: 0 0 50% 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8838ff), to(#e942ff));
+  background: linear-gradient(#8838ff, #e942ff);
+}
+
+.container > .cellphone-section > .cellphone-container {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  bottom: 0;
+  right: -45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  width: 275px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px 0;
+  background: #fff;
+  -webkit-box-shadow: 10px 10px 40px #00000020;
+          box-shadow: 10px 10px 40px #00000020;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone {
+  position: relative;
+  border-radius: 8%;
+  width: 250px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #f5f3f7;
+  -webkit-box-shadow: 10px 10px 40px #00000020;
+          box-shadow: 10px 10px 40px #00000020;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+  height: 25px;
+  border-radius: 25px;
+  background: #fff;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 25px 25px 8px 8px;
+  margin-top: 2px;
+  padding: 24px 0 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8838ff), to(#e942ff));
+  background: linear-gradient(#8838ff, #e942ff);
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > header > .back-arrow {
+  width: 16px;
+  height: 16px;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > header > .user-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > header > .user-container > .avatar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: ccenter;
+      -ms-flex-pack: ccenter;
+          justify-content: ccenter;
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > header > .user-container > .avatar-container > img {
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > header > .user-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > header > .user-container > div > strong {
+  font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > header > .user-container > div > span {
+  color: #ffffff80;
+  font-size: 12px;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > header > .three-dots {
+  width: 24px;
+  height: 24px;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message {
+  border-radius: 10px;
+  font-size: 12px;
+  width: 100%;
+  max-width: 60%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message + .message {
+  margin-top: 10px;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message.left {
+  border-bottom-left-radius: 0;
+  color: #e942ff;
+  background: #ede4f5;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message.right {
+  border-bottom-right-radius: 0;
+  background: #fff;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 70%;
+  padding: 0;
+  background: transparent;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message.images > img {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 170px;
+  padding: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8838ff), to(#e942ff));
+  background: linear-gradient(#8838ff, #e942ff);
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message.price > .time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message.price > .time-container > img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message.price > .time-container > span {
+  color: #fff;
+  margin-left: 5px;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > main > .message-container > .message.price > .price-container > strong {
+  font-size: 16px;
+  color: #fff;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > footer {
+  width: 100%;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > footer > .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 25px;
+  background: #fff;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > footer > .input-container > .input {
+  width: 800%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 10px;
+  background: transparent;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > footer > .input-container > .input > span {
+  font-size: 12px;
+  color: #00000080;
+}
+
+.container > .cellphone-section > .cellphone-container > .cellphone > footer > .input-container > .send-container {
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #3D2553;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.container > .description-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.container > .description-container > h1 {
+  margin: 20px 0;
+  color: #3e2753;
+}
+
+.container > .description-container > p {
+  color: #a39daa;
+}
+/*# sourceMappingURL=style.css.map */
